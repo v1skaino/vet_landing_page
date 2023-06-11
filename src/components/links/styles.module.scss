@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.card div {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+
+  padding: 30px;
+  color: var(--white);
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.card p span {
+  color: var(--gray-100);
+}
+
+.card:hover div {
+  height: 100%;
+}
+
+.card:hover div h3 {
+  color: var(--secondary);
+}
+
+.card img {
+  width: 80px;
+  height: 60px;
+  top: 20px;
+  left: 10px;
+  position: absolute;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
