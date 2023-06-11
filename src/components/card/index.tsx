@@ -1,14 +1,21 @@
 import styles from "./styles.module.scss";
-export const CardCarousel = () => {
+type Props = {
+  title: string;
+  description: string;
+  image: string;
+};
+export const CardCarousel = ({ description, image, title }: Props) => {
   return (
     <div className={styles.card}>
-      <div className={styles.card__image}></div>
-      <div className={styles.card__content}>
-        <p className={styles.card__title}>Card Title</p>
-        <p className={styles.card__text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div
+        className={styles.card__img}
+        style={{ backgroundImage: `url(${image})` }}
+      >
+        {" "}
+      </div>
+      <div className={styles.card__descr_wrapper}>
+        <p className={styles.card__title}>{title}</p>
+        <p className={styles.card__descr}>{description}</p>
       </div>
     </div>
   );
