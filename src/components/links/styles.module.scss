@@ -61,3 +61,12 @@
 .card:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    height: 60vh;
+  }
+}
