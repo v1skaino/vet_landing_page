@@ -1,5 +1,6 @@
 import AliceCarousel from "react-alice-carousel";
 import { CardCarousel } from "../card/index";
+import { Reveal } from "../reveal";
 import styles from "./styles.module.scss";
 
 export const Carousel = () => {
@@ -29,18 +30,20 @@ export const Carousel = () => {
   ];
 
   return (
-    <div className={styles.container}>
-      <AliceCarousel
-        mouseTracking
-        items={items}
-        responsive={responsive}
-        infinite
-        controlsStrategy="alternate"
-        disableButtonsControls
-        autoPlay
-        autoPlayInterval={2000}
-        animationType="fadeout"
-      />
-    </div>
+    <Reveal>
+      <div className={styles.container}>
+        <AliceCarousel
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          infinite
+          controlsStrategy="alternate"
+          disableButtonsControls
+          autoPlay
+          autoPlayInterval={2000}
+          animationType="fadeout"
+        />
+      </div>
+    </Reveal>
   );
 };
