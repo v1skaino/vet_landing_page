@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container nav {
+  width: 100vw;
+  height: 8vh;
+  opacity: 0.8;
+
+  display: flex;
+  background-color: var(--primary);
+}
+
+.container nav img {
+  height: 100%;
+}
+
+.mainInfo {
+  display: flex;
+  min-height: calc(100vh - 8vh);
+  width: 100vw;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.mainInfo img {
+  width: 65%;
+  margin-top: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  row-gap: 10px;
+}
+
+.label h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.label p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.label button {
+  padding: 12px 35px;
+  border-radius: 20px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  margin-top: 2vh;
+  transition: 0.5s;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.label button:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-repeat: repeat;
+  }
+  .mainInfo img {
+    width: 100%;
+    margin: 0;
+  }
+  .label button {
+    font-size: 1.1rem;
+  }
+
+  .label p {
+    font-size: 1.4rem;
+  }
+}
