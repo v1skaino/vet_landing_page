@@ -1,3 +1,4 @@
+import "react-alice-carousel/lib/alice-carousel.css";
 import Router from "./routes";
 import "./styles/global.scss";
 
