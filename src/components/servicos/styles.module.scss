@@ -1,0 +1,47 @@
+.container {
+  background-color: #f9f9fa;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  row-gap: 40px;
+}
+
+.services {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  width: 150px;
+  text-align: center;
+  word-break: keep-all;
+}
+.article div svg {
+  color: var(--white);
+}
+
+.article:nth-child(even) div {
+  background-color: var(--secondary);
+}
+
+.article div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
