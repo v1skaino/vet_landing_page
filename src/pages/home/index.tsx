@@ -1,4 +1,5 @@
 import { About } from "../../components/about";
+import { Adoption } from "../../components/adoption";
 import { Carousel } from "../../components/carousel";
 import { Links } from "../../components/links";
 import { Main } from "../../components/main";
@@ -15,6 +16,7 @@ const Home = () => {
       <Carousel />
       <Servicos />
       <About />
+      <Adoption />
     </main>
   );
 };
